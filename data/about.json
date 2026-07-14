@@ -1,0 +1,41 @@
+{
+  "_instructions": "About section.",
+  "sectionTitle": "About Me",
+  "image": "assets/images/profile.jpg",
+  "paragraphs": [
+    "Data Analyst with 3+ years of experience delivering analytics, business intelligence, and cloud-based data solutions across healthcare and insurance domains.",
+    "Experienced in SQL, Python, Power BI, Snowflake, Azure Databricks, Azure Data Factory, and Azure Synapse Analytics for building scalable ETL pipelines, interactive dashboards, and analytical data models.",
+    "Skilled at transforming complex data into actionable insights, improving reporting efficiency, and supporting data-driven business decisions through automation, data quality, and cross-functional collaboration."
+  ],
+  "statistics": [
+    {
+      "icon": "fas fa-project-diagram",
+      "value": "11+",
+      "label": "Projects Completed",
+      "color": "#FF6B6B"
+    },
+    {
+      "icon": "fas fa-briefcase",
+      "value": "2+",
+      "label": "Years Experience",
+      "color": "#4ECDC4"
+    },
+    {
+      "icon": "fas fa-code",
+      "value": "69+",
+      "label": "Technologies",
+      "color": "#FFE66D"
+    },
+    {
+      "icon": "fas fa-award",
+      "value": "1+",
+      "label": "Certifications",
+      "color": "#A8DADC"
+    }
+  ],
+  "downloadCV": {
+    "text": "Download Resume",
+    "href": "assets/files/resume.pdf",
+    "icon": "fas fa-download"
+  }
+}

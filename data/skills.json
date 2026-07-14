@@ -1,0 +1,103 @@
+{
+  "_instructions": "Organize your skills with vibrant colors.",
+  "sectionTitle": "Skills & Technologies",
+  "categories": [
+    {
+      "category": "Programming Languages",
+      "icon": "fas fa-code",
+      "color": "#FF6B6B",
+      "skills": [
+        "Python",
+        "SQL",
+        "DAX"
+      ]
+    },
+    {
+      "category": "Frameworks & Libraries",
+      "icon": "fas fa-toolbox",
+      "color": "#4ECDC4",
+      "skills": [
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "Azure OpenAI"
+      ]
+    },
+    {
+      "category": "Tools & Platforms",
+      "icon": "fas fa-wrench",
+      "color": "#FFE66D",
+      "skills": [
+        "Power BI",
+        "Tableau",
+        "Azure Databricks",
+        "Azure Data Factory",
+        "Azure Synapse Analytics",
+        "Microsoft Excel",
+        "Power Query",
+        "Agile",
+        "Git",
+        "GitHub",
+        "Tableau Desktop",
+        "Tableau Server",
+        "SSIS",
+        "SQL Server"
+      ]
+    },
+    {
+      "category": "Technical Skills",
+      "icon": "fas fa-laptop-code",
+      "color": "#A8DADC",
+      "skills": [
+        "Data Analysis",
+        "Exploratory Data Analysis (EDA)",
+        "Statistical Analysis",
+        "Predictive Analytics",
+        "Business Intelligence",
+        "KPI Analysis",
+        "Trend Analysis",
+        "Advanced SQL",
+        "Snowflake",
+        "CTEs",
+        "Window Functions",
+        "Stored Procedures",
+        "Views",
+        "Joins",
+        "Query Optimization",
+        "Performance Tuning",
+        "Indexing",
+        "Power BI Service",
+        "Dashboard Development",
+        "Interactive Dashboards",
+        "Executive Reporting",
+        "KPI Reporting",
+        "Healthcare Analytics",
+        "Star Schema",
+        "Dimensional Modeling",
+        "Fact & Dimension Tables",
+        "Data Modeling",
+        "Microsoft Azure",
+        "ETL Pipelines",
+        "Data Integration",
+        "Batch Processing",
+        "Workflow Automation",
+        "AI-Assisted Analytics",
+        "Prompt Engineering",
+        "Machine Learning",
+        "Claims Analytics",
+        "Provider Analytics",
+        "Member Analytics",
+        "Clinical Reporting",
+        "HIPAA Compliance",
+        "Regulatory Reporting",
+        "Data Validation",
+        "Data Profiling",
+        "Data Reconciliation",
+        "Metadata Management",
+        "Data Governance",
+        "Stakeholder Management",
+        "Cross-Functional Collaboration"
+      ]
+    }
+  ]
+}

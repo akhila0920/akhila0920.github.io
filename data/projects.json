@@ -1,0 +1,258 @@
+{
+  "_instructions": "Add your projects.",
+  "sectionTitle": "Featured Work",
+  "projects": [
+    {
+      "title": "spark-and-kafka_iot-data-processing-and-analytics",
+      "description": "Learning project built with modern web technologies",
+      "longDescription": "Learning project built with modern web technologies",
+      "category": "Backend Development",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#FF6B6B",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": true,
+      "github": "https://github.com/akhila0920/spark-and-kafka_iot-data-processing-and-analytics",
+      "demo": "https://github.com/akhila0920/spark-and-kafka_iot-data-processing-and-analytics",
+      "links": {
+        "github": "https://github.com/akhila0920/spark-and-kafka_iot-data-processing-and-analytics",
+        "demo": "https://github.com/akhila0920/spark-and-kafka_iot-data-processing-and-analytics",
+        "live": "https://github.com/akhila0920/spark-and-kafka_iot-data-processing-and-analytics"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "streamlit_mcp_cortex",
+      "description": "Hands-on learning experience with modern frameworks",
+      "longDescription": "Hands-on learning experience with modern frameworks",
+      "category": "Backend Development",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#4ECDC4",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/akhila0920/streamlit_mcp_cortex",
+      "demo": "https://github.com/akhila0920/streamlit_mcp_cortex",
+      "links": {
+        "github": "https://github.com/akhila0920/streamlit_mcp_cortex",
+        "demo": "https://github.com/akhila0920/streamlit_mcp_cortex",
+        "live": "https://github.com/akhila0920/streamlit_mcp_cortex"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "comprehensive-healthcare-analytics",
+      "description": "Portfolio project showcasing development capabilities",
+      "longDescription": "Portfolio project showcasing development capabilities",
+      "category": "Backend Development",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#FFE66D",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/akhila0920/comprehensive-healthcare-analytics",
+      "demo": "https://github.com/akhila0920/comprehensive-healthcare-analytics",
+      "links": {
+        "github": "https://github.com/akhila0920/comprehensive-healthcare-analytics",
+        "demo": "https://github.com/akhila0920/comprehensive-healthcare-analytics",
+        "live": "https://github.com/akhila0920/comprehensive-healthcare-analytics"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "customer-trends-data-analysis-sql-python-powerbi",
+      "description": "Full-featured application built as a learning exercise",
+      "longDescription": "Full-featured application built as a learning exercise",
+      "category": "Software Development",
+      "technologies": [
+        "Jupyter Notebook"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#A8DADC",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/akhila0920/customer-trends-data-analysis-sql-python-powerbi",
+      "demo": "https://github.com/akhila0920/customer-trends-data-analysis-sql-python-powerbi",
+      "links": {
+        "github": "https://github.com/akhila0920/customer-trends-data-analysis-sql-python-powerbi",
+        "demo": "https://github.com/akhila0920/customer-trends-data-analysis-sql-python-powerbi",
+        "live": "https://github.com/akhila0920/customer-trends-data-analysis-sql-python-powerbi"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "sql-portfolio",
+      "description": "Modern web application demonstrating clean code principles",
+      "longDescription": "Modern web application demonstrating clean code principles",
+      "category": "Software Development",
+      "technologies": [
+        "SQL"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#B19CD9",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/akhila0920/sql-portfolio",
+      "demo": "https://github.com/akhila0920/sql-portfolio",
+      "links": {
+        "github": "https://github.com/akhila0920/sql-portfolio",
+        "demo": "https://github.com/akhila0920/sql-portfolio",
+        "live": "https://github.com/akhila0920/sql-portfolio"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "sql-for-financial-data-analysis",
+      "description": "Personal project for exploring modern development practices",
+      "longDescription": "Personal project for exploring modern development practices",
+      "category": "Development",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "color": "#FF8B94",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/akhila0920/sql-for-financial-data-analysis",
+      "demo": "https://github.com/akhila0920/sql-for-financial-data-analysis",
+      "links": {
+        "github": "https://github.com/akhila0920/sql-for-financial-data-analysis",
+        "demo": "https://github.com/akhila0920/sql-for-financial-data-analysis",
+        "live": "https://github.com/akhila0920/sql-for-financial-data-analysis"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "financial-insights-in-banking-data-using-powerbi",
+      "description": "Hands-on learning experience with modern frameworks",
+      "longDescription": "Hands-on learning experience with modern frameworks",
+      "category": "Development",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "color": "#FF6B6B",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/akhila0920/financial-insights-in-banking-data-using-powerbi",
+      "demo": "https://github.com/akhila0920/financial-insights-in-banking-data-using-powerbi",
+      "links": {
+        "github": "https://github.com/akhila0920/financial-insights-in-banking-data-using-powerbi",
+        "demo": "https://github.com/akhila0920/financial-insights-in-banking-data-using-powerbi",
+        "live": "https://github.com/akhila0920/financial-insights-in-banking-data-using-powerbi"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "supply-chain-analysis-in-the-fmcg-domain-atliqmart",
+      "description": "Personal project for exploring modern development practices",
+      "longDescription": "Personal project for exploring modern development practices",
+      "category": "Development",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "color": "#4ECDC4",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/akhila0920/supply-chain-analysis-in-the-fmcg-domain-atliqmart",
+      "demo": "https://github.com/akhila0920/supply-chain-analysis-in-the-fmcg-domain-atliqmart",
+      "links": {
+        "github": "https://github.com/akhila0920/supply-chain-analysis-in-the-fmcg-domain-atliqmart",
+        "demo": "https://github.com/akhila0920/supply-chain-analysis-in-the-fmcg-domain-atliqmart",
+        "live": "https://github.com/akhila0920/supply-chain-analysis-in-the-fmcg-domain-atliqmart"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "sales-insights-data-analysis-using-tableau-and-sql",
+      "description": "Portfolio project showcasing development capabilities",
+      "longDescription": "Portfolio project showcasing development capabilities",
+      "category": "Development",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "color": "#FFE66D",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/akhila0920/sales-insights-data-analysis-using-tableau-and-sql",
+      "demo": "https://github.com/akhila0920/sales-insights-data-analysis-using-tableau-and-sql",
+      "links": {
+        "github": "https://github.com/akhila0920/sales-insights-data-analysis-using-tableau-and-sql",
+        "demo": "https://github.com/akhila0920/sales-insights-data-analysis-using-tableau-and-sql",
+        "live": "https://github.com/akhila0920/sales-insights-data-analysis-using-tableau-and-sql"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "power-bi-mastery-dynamic-dashboards-advanced-dax",
+      "description": "Portfolio project showcasing development capabilities",
+      "longDescription": "Portfolio project showcasing development capabilities",
+      "category": "Development",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "color": "#A8DADC",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/akhila0920/power-bi-mastery-dynamic-dashboards-advanced-dax",
+      "demo": "https://github.com/akhila0920/power-bi-mastery-dynamic-dashboards-advanced-dax",
+      "links": {
+        "github": "https://github.com/akhila0920/power-bi-mastery-dynamic-dashboards-advanced-dax",
+        "demo": "https://github.com/akhila0920/power-bi-mastery-dynamic-dashboards-advanced-dax",
+        "live": "https://github.com/akhila0920/power-bi-mastery-dynamic-dashboards-advanced-dax"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "contribution-history",
+      "description": "Generated GitHub contribution history",
+      "longDescription": "Generated GitHub contribution history",
+      "category": "Development",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "color": "#B19CD9",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&q=80&fit=crop",
+      "featured": false,
+      "github": "https://github.com/akhila0920/contribution-history",
+      "demo": "https://github.com/akhila0920/contribution-history",
+      "links": {
+        "github": "https://github.com/akhila0920/contribution-history",
+        "demo": "https://github.com/akhila0920/contribution-history",
+        "live": "https://github.com/akhila0920/contribution-history"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    }
+  ]
+}

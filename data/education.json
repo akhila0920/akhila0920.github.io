@@ -1,0 +1,32 @@
+{
+  "_instructions": "Add your education and certifications here.",
+  "sectionTitle": "Education & Certifications",
+  "certificationsTitle": "Certifications",
+  "education": [
+    {
+      "degree": "Masters",
+      "school": "University of Central Missouri",
+      "institution": "University of Central Missouri",
+      "period": "August 2024 - May 2026",
+      "details": "",
+      "description": ""
+    },
+    {
+      "degree": "Bachelor of Technology",
+      "school": "Chaitanya Institute of Technology and Science",
+      "institution": "Chaitanya Institute of Technology and Science",
+      "period": "Aug 2019 - Jun 2023",
+      "details": "",
+      "description": ""
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Data Analytics Essentials",
+      "name": "Data Analytics Essentials",
+      "issuer": "Cisco Networking Academy program",
+      "date": "",
+      "icon": "fas fa-certificate"
+    }
+  ]
+}
