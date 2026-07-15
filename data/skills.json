@@ -1,102 +1,80 @@
 {
-  "_instructions": "Organize your skills with vibrant colors.",
+  "_instructions": "Organize your skills into focused, scannable groups.",
   "sectionTitle": "Skills & Technologies",
   "categories": [
     {
-      "category": "Programming Languages",
+      "category": "Languages & Querying",
       "icon": "fas fa-code",
       "color": "#FF6B6B",
       "skills": [
         "Python",
         "SQL",
-        "DAX"
+        "Advanced SQL",
+        "DAX",
+        "CTEs",
+        "Window Functions",
+        "Stored Procedures",
+        "Query Optimization"
       ]
     },
     {
-      "category": "Frameworks & Libraries",
-      "icon": "fas fa-toolbox",
+      "category": "BI & Visualization",
+      "icon": "fas fa-chart-pie",
       "color": "#4ECDC4",
+      "skills": [
+        "Power BI",
+        "Tableau",
+        "Power BI Service",
+        "Power Query",
+        "Excel",
+        "Dashboard Development",
+        "Executive Reporting",
+        "KPI Analysis"
+      ]
+    },
+    {
+      "category": "Data Engineering & Cloud",
+      "icon": "fas fa-database",
+      "color": "#FFE66D",
+      "skills": [
+        "Azure Data Factory",
+        "Azure Databricks",
+        "Azure Synapse",
+        "Snowflake",
+        "SSIS",
+        "SQL Server",
+        "ETL Pipelines",
+        "Data Integration"
+      ]
+    },
+    {
+      "category": "Analytics & ML",
+      "icon": "fas fa-brain",
+      "color": "#B19CD9",
       "skills": [
         "Pandas",
         "NumPy",
         "Scikit-learn",
-        "Azure OpenAI"
-      ]
-    },
-    {
-      "category": "Tools & Platforms",
-      "icon": "fas fa-wrench",
-      "color": "#FFE66D",
-      "skills": [
-        "Power BI",
-        "Tableau",
-        "Azure Databricks",
-        "Azure Data Factory",
-        "Azure Synapse Analytics",
-        "Microsoft Excel",
-        "Power Query",
-        "Agile",
-        "Git",
-        "GitHub",
-        "Tableau Desktop",
-        "Tableau Server",
-        "SSIS",
-        "SQL Server"
-      ]
-    },
-    {
-      "category": "Technical Skills",
-      "icon": "fas fa-laptop-code",
-      "color": "#A8DADC",
-      "skills": [
-        "Data Analysis",
-        "Exploratory Data Analysis (EDA)",
+        "Exploratory Data Analysis",
         "Statistical Analysis",
         "Predictive Analytics",
-        "Business Intelligence",
-        "KPI Analysis",
-        "Trend Analysis",
-        "Advanced SQL",
-        "Snowflake",
-        "CTEs",
-        "Window Functions",
-        "Stored Procedures",
-        "Views",
-        "Joins",
-        "Query Optimization",
-        "Performance Tuning",
-        "Indexing",
-        "Power BI Service",
-        "Dashboard Development",
-        "Interactive Dashboards",
-        "Executive Reporting",
-        "KPI Reporting",
-        "Healthcare Analytics",
+        "Azure OpenAI",
+        "AI-Assisted Analytics"
+      ]
+    },
+    {
+      "category": "Modeling & Governance",
+      "icon": "fas fa-sitemap",
+      "color": "#A8DADC",
+      "skills": [
+        "Data Modeling",
         "Star Schema",
         "Dimensional Modeling",
-        "Fact & Dimension Tables",
-        "Data Modeling",
-        "Microsoft Azure",
-        "ETL Pipelines",
-        "Data Integration",
-        "Batch Processing",
-        "Workflow Automation",
-        "AI-Assisted Analytics",
-        "Prompt Engineering",
-        "Machine Learning",
-        "Claims Analytics",
-        "Provider Analytics",
-        "Member Analytics",
-        "Clinical Reporting",
-        "HIPAA Compliance",
-        "Regulatory Reporting",
-        "Data Validation",
-        "Data Profiling",
-        "Data Reconciliation",
-        "Metadata Management",
+        "Data Quality",
         "Data Governance",
-        "Stakeholder Management",
-        "Cross-Functional Collaboration"
+        "Metadata Management",
+        "HIPAA Compliance",
+        "Healthcare Analytics"
       ]
     }
   ]

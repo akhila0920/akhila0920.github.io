@@ -1,21 +1,27 @@
 {
-  "_instructions": "Add your education and certifications here.",
+  "_instructions": "Add your education and certifications here. TODO: confirm the exact Master's/Bachelor's field of study and fill 'field'.",
   "sectionTitle": "Education & Certifications",
   "certificationsTitle": "Certifications",
   "education": [
     {
-      "degree": "Masters",
+      "degree": "Master of Science",
+      "field": "",
       "school": "University of Central Missouri",
       "institution": "University of Central Missouri",
-      "period": "August 2024 - May 2026",
+      "period": "Aug 2024 – May 2026",
+      "icon": "fas fa-graduation-cap",
+      "color": "#667eea",
       "details": "",
       "description": ""
     },
     {
       "degree": "Bachelor of Technology",
+      "field": "",
       "school": "Chaitanya Institute of Technology and Science",
       "institution": "Chaitanya Institute of Technology and Science",
-      "period": "Aug 2019 - Jun 2023",
+      "period": "Aug 2019 – Jun 2023",
+      "icon": "fas fa-university",
+      "color": "#4ECDC4",
       "details": "",
       "description": ""
     }
@@ -24,9 +30,10 @@
     {
       "title": "Data Analytics Essentials",
       "name": "Data Analytics Essentials",
-      "issuer": "Cisco Networking Academy program",
+      "issuer": "Cisco Networking Academy",
       "date": "",
-      "icon": "fas fa-certificate"
+      "icon": "fas fa-certificate",
+      "color": "#FFE66D"
     }
   ]
 }

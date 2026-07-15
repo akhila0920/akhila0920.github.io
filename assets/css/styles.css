@@ -84,7 +84,10 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* clip (not hidden) prevents a horizontal scrollbar without turning the
+       element into a scroll container, which would break window.scrollTo /
+       anchor navigation / back-to-top. */
+    overflow-x: clip;
 }
 
 body {
@@ -93,7 +96,7 @@ body {
     line-height: 1.7;
     color: var(--color-text-secondary);
     background-color: var(--color-bg-dark);
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 ::selection {
@@ -523,9 +526,33 @@ body {
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+        "portrait text"
+        "stats stats";
     gap: var(--spacing-xl);
+    align-items: center;
     margin-bottom: var(--spacing-xl);
+}
+
+.about-portrait {
+    grid-area: portrait;
+}
+
+.about-portrait img {
+    width: 100%;
+    display: block;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: var(--shadow-xl), 0 0 40px rgba(102, 126, 234, 0.2);
+}
+
+.about-text {
+    grid-area: text;
+}
+
+.about-stats {
+    grid-area: stats;
 }
 
 .about-text {
@@ -598,8 +625,7 @@ body {
 .timeline::before {
     content: '';
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 30px;
     width: 2px;
     height: 100%;
     background: linear-gradient(to bottom, rgba(102, 126, 234, 0.5), rgba(240, 147, 251, 0.5));
@@ -608,26 +634,11 @@ body {
 .timeline-item {
     position: relative;
     margin-bottom: var(--spacing-xl);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-lg);
+    padding-left: 75px;
 }
 
-.timeline-item:nth-child(even) .timeline-content {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.timeline-item:nth-child(even) .timeline-empty {
-    grid-column: 2;
-}
-
-.timeline-item:nth-child(odd) .timeline-empty {
-    grid-column: 1;
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-    grid-column: 2;
+.timeline-empty {
+    display: none;
 }
 
 .timeline-content {
@@ -648,7 +659,7 @@ body {
 
 .timeline-icon {
     position: absolute;
-    left: 50%;
+    left: 30px;
     top: 0;
     transform: translateX(-50%);
     width: 50px;
@@ -665,7 +676,34 @@ body {
 }
 
 .experience-header {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
     margin-bottom: var(--spacing-md);
+}
+
+.company-logo {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: var(--radius-md);
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.company-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.experience-heading-text {
+    min-width: 0;
 }
 
 .experience-title {
@@ -843,6 +881,43 @@ body {
     color: #fff;
     margin-bottom: var(--spacing-md);
     background: var(--gradient-primary);
+}
+
+/* Full-bleed image banner at the top of a project card */
+.project-media {
+    position: relative;
+    margin: calc(-1 * var(--spacing-lg)) calc(-1 * var(--spacing-lg)) var(--spacing-md);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    background: var(--color-bg-darker);
+}
+
+.project-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.project-card:hover .project-media img {
+    transform: scale(1.05);
+}
+
+.project-media-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: var(--font-size-lg);
+    box-shadow: var(--shadow-md);
 }
 
 .project-header {
@@ -1339,6 +1414,32 @@ body {
 }
 
 /* ============================================
+   Reduced Motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+
+    .gradient-orb {
+        animation: none;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* ============================================
    Responsive Design
    ============================================ */
 @media (max-width: 968px) {
@@ -1401,6 +1502,19 @@ body {
 
     .education-grid {
         grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "portrait"
+            "text"
+            "stats";
+    }
+
+    .about-portrait {
+        max-width: 280px;
+        margin: 0 auto;
     }
 }
 

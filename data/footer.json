@@ -5,18 +5,23 @@
     "year": "2026",
     "name": "Akhila Abbagani"
   },
-  "tagline": "Crafted with passion and dedication",
+  "tagline": "Turning data into decisions.",
   "links": [
     {
-      "text": "Privacy Policy",
-      "href": "#privacy"
+      "text": "Email",
+      "href": "mailto:abbaganiakhila0920@gmail.com"
     },
     {
-      "text": "Terms of Service",
-      "href": "#terms"
+      "text": "GitHub",
+      "href": "https://github.com/akhila0920"
     }
   ],
   "socialLinks": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/akhila0920",
+      "icon": "fab fa-github"
+    },
     {
       "platform": "Email",
       "url": "mailto:abbaganiakhila0920@gmail.com",

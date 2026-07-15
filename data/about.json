@@ -10,26 +10,26 @@
   "statistics": [
     {
       "icon": "fas fa-project-diagram",
-      "value": "11+",
-      "label": "Projects Completed",
+      "value": "10+",
+      "label": "Projects Delivered",
       "color": "#FF6B6B"
     },
     {
       "icon": "fas fa-briefcase",
-      "value": "2+",
+      "value": "3+",
       "label": "Years Experience",
       "color": "#4ECDC4"
     },
     {
-      "icon": "fas fa-code",
-      "value": "69+",
-      "label": "Technologies",
+      "icon": "fas fa-database",
+      "value": "12M+",
+      "label": "Records Analyzed",
       "color": "#FFE66D"
     },
     {
       "icon": "fas fa-award",
-      "value": "1+",
-      "label": "Certifications",
+      "value": "1",
+      "label": "Certification",
       "color": "#A8DADC"
     }
   ],

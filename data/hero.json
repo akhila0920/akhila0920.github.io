@@ -3,23 +3,23 @@
   "greeting": "Hi, I'm",
   "name": "Akhila Abbagani",
   "title": "Data Analyst",
-  "summary": "Data Analyst with 2+ years of experience specializing in Python, SQL, DAX.",
+  "summary": "I turn healthcare and insurance data into decisions — building SQL and Python pipelines, Power BI dashboards, and cloud analytics on Azure and Snowflake.",
   "avatarUrl": "/avatar.png",
-  "tagline": "Data Analyst",
+  "tagline": "SQL · Python · Power BI · Azure · Snowflake",
   "highlights": [
     {
       "icon": "fas fa-briefcase",
-      "text": "2+ Years Experience",
+      "text": "3+ Years Experience",
       "color": "#FF6B6B"
     },
     {
       "icon": "fas fa-project-diagram",
-      "text": "11+ Projects Completed",
+      "text": "10+ Projects Delivered",
       "color": "#4ECDC4"
     },
     {
-      "icon": "fas fa-code",
-      "text": "Technical Expertise",
+      "icon": "fas fa-heartbeat",
+      "text": "Healthcare & Insurance Domain",
       "color": "#FFE66D"
     }
   ],
@@ -44,6 +44,11 @@
       "platform": "Email",
       "url": "mailto:abbaganiakhila0920@gmail.com",
       "icon": "fas fa-envelope"
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/akhila0920",
+      "icon": "fab fa-github"
     }
   ],
   "scrollIndicator": {

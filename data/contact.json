@@ -1,7 +1,7 @@
 {
-  "_instructions": "Contact section.",
+  "_instructions": "Contact section. The form opens the visitor's email client (mailto) so it works on static GitHub Pages. To use a real backend instead, set form.mode to 'fetch' and form.action to a Formspree endpoint.",
   "sectionTitle": "Get In Touch",
-  "subtitle": "Have a project in mind? I'd love to hear from you!",
+  "subtitle": "Have a role or project in mind? I'd love to hear from you.",
   "contactInfo": [
     {
       "type": "email",
@@ -14,7 +14,7 @@
     {
       "type": "phone",
       "label": "Phone",
-      "value": "(913)-954-3232",
+      "value": "(913) 954-3232",
       "href": "tel:9139543232",
       "icon": "fas fa-phone",
       "color": "#4ECDC4"
@@ -22,25 +22,27 @@
     {
       "type": "location",
       "label": "Location",
-      "value": "Lees summit, MO",
-      "href": "https://maps.google.com/?q=Lees%20summit%2C%20MO",
+      "value": "Lees Summit, MO",
+      "href": "https://maps.google.com/?q=Lees%20Summit%2C%20MO",
       "icon": "fas fa-map-marker-alt",
       "color": "#FFE66D"
     }
   ],
   "form": {
-    "action": "#",
+    "mode": "mailto",
+    "emailTo": "abbaganiakhila0920@gmail.com",
+    "action": "mailto:abbaganiakhila0920@gmail.com",
     "method": "POST",
     "submitText": "Send Message",
     "submitIcon": "fas fa-paper-plane",
-    "successMessage": "Thanks for reaching out!",
-    "errorMessage": "Oops! Something went wrong.",
+    "successMessage": "Opening your email app — thanks for reaching out!",
+    "errorMessage": "Couldn't open your email app. Please email abbaganiakhila0920@gmail.com directly.",
     "fields": [
       {
         "name": "name",
         "type": "text",
         "label": "Your Name",
-        "placeholder": "John Doe",
+        "placeholder": "Jane Smith",
         "required": true,
         "icon": "fas fa-user"
       },
@@ -48,7 +50,7 @@
         "name": "email",
         "type": "email",
         "label": "Your Email",
-        "placeholder": "john@example.com",
+        "placeholder": "jane@company.com",
         "required": true,
         "icon": "fas fa-envelope"
       },
@@ -56,7 +58,7 @@
         "name": "subject",
         "type": "text",
         "label": "Subject",
-        "placeholder": "Project Inquiry",
+        "placeholder": "Opportunity / Project Inquiry",
         "required": true,
         "icon": "fas fa-tag"
       },
@@ -64,12 +66,23 @@
         "name": "message",
         "type": "textarea",
         "label": "Message",
-        "placeholder": "Tell me about your project...",
+        "placeholder": "Tell me a bit about the role or project...",
         "required": true,
         "rows": 6,
         "icon": "fas fa-comment"
       }
     ]
   },
-  "socialMedia": []
+  "socialMedia": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/akhila0920",
+      "icon": "fab fa-github"
+    },
+    {
+      "platform": "Email",
+      "url": "mailto:abbaganiakhila0920@gmail.com",
+      "icon": "fas fa-envelope"
+    }
+  ]
 }

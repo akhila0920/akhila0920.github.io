@@ -161,6 +161,12 @@ async function loadAbout() {
         // Set section title
         document.getElementById('about-title').textContent = data.sectionTitle;
 
+        // Render portrait
+        const portrait = document.getElementById('about-portrait');
+        if (portrait && data.image) {
+            portrait.innerHTML = `<img src="${data.image}" alt="Akhila Abbagani" loading="lazy">`;
+        }
+
         // Render paragraphs
         const textContainer = document.getElementById('about-text');
         if (textContainer && data.paragraphs) {
@@ -218,15 +224,22 @@ async function loadExperience() {
                     </div>
                     <div class="timeline-content">
                         <div class="experience-header">
-                            <h3 class="experience-title">${exp.title}</h3>
-                            <p class="experience-company">
-                                ${exp.company} ${exp.location ? `• ${exp.location}` : ''}
-                            </p>
-                            <p class="experience-period">
-                                <i class="fas fa-calendar-alt"></i>
-                                ${exp.period}
-                                ${exp.type ? `<span class="experience-type">• ${exp.type}</span>` : ''}
-                            </p>
+                            ${exp.logo ? `
+                                <div class="company-logo">
+                                    <img src="${exp.logo}" alt="${exp.company} logo" loading="lazy">
+                                </div>
+                            ` : ''}
+                            <div class="experience-heading-text">
+                                <h3 class="experience-title">${exp.title}</h3>
+                                <p class="experience-company">
+                                    ${exp.company} ${exp.location ? `• ${exp.location}` : ''}
+                                </p>
+                                <p class="experience-period">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    ${exp.period}
+                                    ${exp.type ? `<span class="experience-type">• ${exp.type}</span>` : ''}
+                                </p>
+                            </div>
                         </div>
                         <p class="experience-description">${exp.description}</p>
                         ${exp.responsibilities ? `
@@ -297,9 +310,18 @@ async function loadProjects() {
         if (projectsGrid && data.projects) {
             projectsGrid.innerHTML = data.projects.map(project => `
                 <div class="project-card">
-                    <div class="project-icon" style="background: ${project.color}">
-                        <i class="${project.icon}"></i>
-                    </div>
+                    ${project.image ? `
+                        <div class="project-media">
+                            <img src="${project.image}" alt="${project.title} preview" loading="lazy">
+                            <span class="project-media-badge" style="background: ${project.color}">
+                                <i class="${project.icon}"></i>
+                            </span>
+                        </div>
+                    ` : `
+                        <div class="project-icon" style="background: ${project.color}">
+                            <i class="${project.icon}"></i>
+                        </div>
+                    `}
                     <div class="project-header">
                         <h3 class="project-title">${project.title}</h3>
                     </div>
@@ -362,7 +384,7 @@ async function loadEducation() {
                     <div class="education-icon" style="background: ${edu.color}20; color: ${edu.color}">
                         <i class="${edu.icon}"></i>
                     </div>
-                    <h3 class="education-degree">${edu.degree}</h3>
+                    <h3 class="education-degree">${edu.degree}${edu.field ? ', ' + edu.field : ''}</h3>
                     <p class="education-institution">${edu.institution}</p>
                     <p class="education-period">${edu.period}</p>
                     <p class="education-description">${edu.description}</p>
@@ -467,36 +489,46 @@ async function loadContact() {
             contactForm.addEventListener('submit', async (e) => {
                 e.preventDefault();
                 const formMessage = contactForm.querySelector('.form-message');
-                const submitButton = contactForm.querySelector('.form-submit');
+
+                if (!contactForm.reportValidity()) {
+                    return;
+                }
+
+                const fd = new FormData(contactForm);
+                const name = (fd.get('name') || '').toString().trim();
+                const email = (fd.get('email') || '').toString().trim();
+                const subject = (fd.get('subject') || '').toString().trim();
+                const message = (fd.get('message') || '').toString().trim();
 
                 try {
-                    submitButton.disabled = true;
-                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                    if (data.form.mode === 'mailto') {
+                        // Static-site friendly: open the visitor's email client.
+                        const to = data.form.emailTo;
+                        const body = `${message}\n\n— ${name} (${email})`;
+                        const mailtoUrl = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                        window.location.href = mailtoUrl;
 
-                    const formData = new FormData(contactForm);
-                    const response = await fetch(contactForm.action, {
-                        method: contactForm.method,
-                        body: formData,
-                        headers: {
-                            'Accept': 'application/json'
-                        }
-                    });
-
-                    if (response.ok) {
                         formMessage.textContent = data.form.successMessage;
                         formMessage.className = 'form-message success';
                         formMessage.style.display = 'block';
                         contactForm.reset();
                     } else {
-                        throw new Error('Form submission failed');
+                        // Backend mode (e.g. Formspree).
+                        const response = await fetch(contactForm.action, {
+                            method: contactForm.method,
+                            body: fd,
+                            headers: { 'Accept': 'application/json' }
+                        });
+                        if (!response.ok) throw new Error('Form submission failed');
+                        formMessage.textContent = data.form.successMessage;
+                        formMessage.className = 'form-message success';
+                        formMessage.style.display = 'block';
+                        contactForm.reset();
                     }
                 } catch (error) {
                     formMessage.textContent = data.form.errorMessage;
                     formMessage.className = 'form-message error';
                     formMessage.style.display = 'block';
-                } finally {
-                    submitButton.disabled = false;
-                    submitButton.innerHTML = `<i class="${data.form.submitIcon}"></i> ${data.form.submitText}`;
                 }
             });
         }
@@ -683,6 +715,10 @@ function initializeBackToTop() {
 // Initialize Particles Background
 // ============================================
 function initializeParticles() {
+    // Respect users who prefer reduced motion — skip the animated canvas entirely.
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+    }
     if (typeof particlesJS !== 'undefined') {
         particlesJS('particles-js', {
             particles: {

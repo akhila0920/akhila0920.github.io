@@ -7,25 +7,38 @@
       "company": "Cigna",
       "period": "Oct 2025 – Apr 2026",
       "location": "",
-      "description": "Built enterprise healthcare datasets using SQL, Snowflake, Azure Databricks, and Python by integrating claims, eligibility, provider, and member data, supporting analytics across 12M+ claim records and improving reporting efficiency by 40%.\nDeveloped AI-assisted reporting solutions with Azure OpenAI, Python, Power BI, and Tableau to generate automated healthcare summaries, reducing monthly reporting effort by 32 hours while improving analyst productivity.\nDesigned executive dashboards in Power BI and Tableau using DAX, advanced SQL, CTEs, Window Functions, and Azure Synapse to monitor claims, provider performance, and operational KPIs for more than 250 business users.\nAutomated ETL workflows using Azure Data Factory, Azure Databricks, Python, and SQL to validate and process 2.8 TB of healthcare data daily, reducing refresh time by 38% while maintaining 99.8% pipeline reliability.\nPrepared analytical datasets for healthcare risk and utilization analysis using Python, Scikit-learn, SQL Views, and feature engineering, enabling faster model development and improving data readiness by 35%.\nWorked closely with clinical teams, product owners, and data engineers to implement HIPAA-compliant data validation, governance standards, and metadata management, reducing reporting discrepancies by 42%.\nOptimized Snowflake SQL using CTEs, Window Functions, clustering, indexing strategies, and query tuning to reduce dashboard refresh time from 18 minutes to under 7 minutes and improve overall user experience.",
+      "icon": "fas fa-briefcase",
+      "color": "#667eea",
+      "description": "Healthcare analytics on enterprise claims data — building datasets, dashboards, and automated reporting for 250+ business users.",
       "responsibilities": [
         "Built enterprise healthcare datasets using SQL, Snowflake, Azure Databricks, and Python by integrating claims, eligibility, provider, and member data, supporting analytics across 12M+ claim records and improving reporting efficiency by 40%",
         "Developed AI-assisted reporting solutions with Azure OpenAI, Python, Power BI, and Tableau to generate automated healthcare summaries, reducing monthly reporting effort by 32 hours while improving analyst productivity",
         "Designed executive dashboards in Power BI and Tableau using DAX, advanced SQL, CTEs, Window Functions, and Azure Synapse to monitor claims, provider performance, and operational KPIs for more than 250 business users",
-        "Automated ETL workflows using Azure Data Factory, Azure Databricks, Python, and SQL to validate and process 2",
-        "8 TB of healthcare data daily, reducing refresh time by 38% while maintaining 99",
-        "8% pipeline reliability",
+        "Automated ETL workflows using Azure Data Factory, Azure Databricks, Python, and SQL to validate and process 2.8 TB of healthcare data daily, reducing refresh time by 38% while maintaining 99.8% pipeline reliability",
         "Prepared analytical datasets for healthcare risk and utilization analysis using Python, Scikit-learn, SQL Views, and feature engineering, enabling faster model development and improving data readiness by 35%",
         "Worked closely with clinical teams, product owners, and data engineers to implement HIPAA-compliant data validation, governance standards, and metadata management, reducing reporting discrepancies by 42%",
         "Optimized Snowflake SQL using CTEs, Window Functions, clustering, indexing strategies, and query tuning to reduce dashboard refresh time from 18 minutes to under 7 minutes and improve overall user experience"
-      ]
+      ],
+      "technologies": [
+        "SQL",
+        "Snowflake",
+        "Azure Databricks",
+        "Python",
+        "Power BI",
+        "Tableau",
+        "Azure Synapse",
+        "DAX"
+      ],
+      "logo": "assets/images/logos/cigna.png"
     },
     {
       "title": "Data Analyst",
       "company": "Cognizant",
       "period": "Apr 2021 – Jun 2024",
       "location": "",
-      "description": "Analyzed large business datasets using SQL, Python, Power BI, Tableau, and Excel to identify operational trends and deliver insights across multiple healthcare and insurance projects, reducing manual reporting by 35%.\nBuilt scalable ETL pipelines with Azure Data Factory, SSIS, Snowflake, SQL, and Python to integrate over 850 GB of transactional data weekly into centralized reporting platforms.\nDeveloped interactive Power BI and Tableau dashboards using DAX, Star Schema modeling, SQL Views, and Power Query to track operational KPIs, financial metrics, and customer performance while reducing reporting time from two days to six hours.\nPerformed exploratory data analysis and statistical validation using Python, Pandas, NumPy, SQL, and Window Functions to identify business trends, improve forecasting accuracy by 18%, and support strategic planning.\nCollaborated with business analysts, developers, QA teams, and client stakeholders to define KPIs, gather reporting requirements, and deliver analytics solutions across four Agile releases with zero critical production issues.\nImproved SQL performance by optimizing joins, Stored Procedures, CTEs, indexing, and query execution plans, reducing report processing time by 48% and improving dashboard responsiveness.\nMaintained enterprise data quality through profiling, reconciliation, validation testing, metadata documentation, and governance processes, achieving 99.5% reporting accuracy across healthcare analytics initiatives.",
+      "icon": "fas fa-briefcase",
+      "color": "#764ba2",
+      "description": "Business intelligence across healthcare and insurance projects — ETL pipelines, dashboards, and statistical analysis delivered in Agile teams.",
       "responsibilities": [
         "Analyzed large business datasets using SQL, Python, Power BI, Tableau, and Excel to identify operational trends and deliver insights across multiple healthcare and insurance projects, reducing manual reporting by 35%",
         "Built scalable ETL pipelines with Azure Data Factory, SSIS, Snowflake, SQL, and Python to integrate over 850 GB of transactional data weekly into centralized reporting platforms",
@@ -33,9 +46,19 @@
         "Performed exploratory data analysis and statistical validation using Python, Pandas, NumPy, SQL, and Window Functions to identify business trends, improve forecasting accuracy by 18%, and support strategic planning",
         "Collaborated with business analysts, developers, QA teams, and client stakeholders to define KPIs, gather reporting requirements, and deliver analytics solutions across four Agile releases with zero critical production issues",
         "Improved SQL performance by optimizing joins, Stored Procedures, CTEs, indexing, and query execution plans, reducing report processing time by 48% and improving dashboard responsiveness",
-        "Maintained enterprise data quality through profiling, reconciliation, validation testing, metadata documentation, and governance processes, achieving 99",
-        "5% reporting accuracy across healthcare analytics initiatives"
-      ]
+        "Maintained enterprise data quality through profiling, reconciliation, validation testing, metadata documentation, and governance processes, achieving 99.5% reporting accuracy across healthcare analytics initiatives"
+      ],
+      "technologies": [
+        "SQL",
+        "Python",
+        "Power BI",
+        "Tableau",
+        "Azure Data Factory",
+        "SSIS",
+        "Snowflake",
+        "Excel"
+      ],
+      "logo": "assets/images/logos/cognizant.svg"
     }
   ]
 }
